@@ -1,0 +1,41 @@
+#wrap{
+    width: 100%;
+    background-image: url(../../images/about/wrap.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-top: 64px;
+}
+.wrap{
+    height: 200px;
+    display: flex;
+    align-items: center;
+
+    & h1{
+        font-family: $h-fonts;
+        font-size: 56px;
+        line-height: 56px;
+        letter-spacing: -2.5px;
+        color: $white;
+    }
+}
+@media only screen and(max-width:992px){
+    .wrap{
+        padding-left: 80px;
+    }
+}
+@media only screen and(max-width:768px){
+
+}
+@media only screen and(max-width:565px){
+    .wrap{
+        padding-right: 90px;
+        display: flex;
+        justify-content: center;
+    }
+}
+@media only screen and(max-width:375px){
+    .wrap{
+        display: flex;
+        justify-content: center;
+    }
+}

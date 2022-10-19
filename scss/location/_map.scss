@@ -1,0 +1,251 @@
+#map {
+    width: 100%;
+}
+.map {
+    &__img{
+        display: none;
+        width: 100%;
+    }
+    &__item {
+        position: relative;
+        margin: 0 auto;
+        height: 542px;
+        background-image: url(../../images/Object.png);
+
+        &--card {
+            width: 189px;
+            height: 72px;
+            background-color: #fcb72b;
+            color: $grey;
+            font-family: $h-fonts;
+            font-size: 24px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: absolute;
+            margin: 40px;
+        }
+        &--card:after {
+            content: " ";
+            position: absolute;
+            right: 50%;
+            bottom: -15px;
+            border-top: 15px solid #fcb72b;
+            border-right: 15px solid transparent;
+            border-left: 15px solid transparent;
+            border-bottom: none;
+        }
+    }
+    &__text{
+        margin: 120px 0px;
+        display: flex;
+        height: 110px;
+        align-items: center;
+        justify-content: space-between;
+        & h2{
+            font-family: 'Space Mono';
+            font-size: 48px;
+            line-height: 48px;
+            letter-spacing: -2.14286px;
+            color: #495567;
+            width: 351px;
+        }
+        & p{
+            font-family: 'Lexend Deca';
+            font-size: 15px;
+            line-height: 25px;
+            color: #939CAA;
+            width: 433px;
+        }
+        
+        & button{ 
+            width: 180px;
+            height: 53px;
+            border: none;
+            background-color: $yellow;
+            font-family: $h-fonts;
+            color: $white;
+            font-size: 15px;
+            line-height: 25px;
+            }
+            & button:hover{
+                border: 3px solid $yellow;
+                color: $yellow;
+            }
+        
+    }
+}
+#gb{
+    top: -25px;
+    left: 375px;
+}
+#usa{
+    left: 150px;
+    top: 15px;
+}
+#ind{
+ margin-left: 780px;
+ margin-top: 230px;
+}
+#jpn{
+    margin-left: 870px;
+}
+@media only screen and(max-width:1119px){
+    .map {
+        &__img{
+            width: 100%;
+            display: block;
+        }
+        &__item {
+            display: none;
+            position: relative;
+            width: 100%;
+            background-image: url(../../images/Object.png);
+        }
+    }
+}
+@media only screen and(max-width: 768px){
+    .map {
+        &__img{
+            width: 100%;
+            display: block;
+        }
+        &__item {
+            display: none;
+            position: relative;
+            width: 100%;
+            background-image: url(../../images/Object.png);
+        }
+        &__text{
+            margin-bottom: 130px;
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+            gap: 30px;
+            height: 300px;
+            align-items: center;
+            & h2{
+                font-family: 'Space Mono';
+                font-size: 48px;
+                line-height: 48px;
+                letter-spacing: -2.14286px;
+                color: #495567;
+                width: 351px;
+            }
+            & p{
+                font-family: 'Lexend Deca';
+                font-size: 15px;
+                line-height: 25px;
+                color: #939CAA;
+                width: 75%;
+            }
+            
+            & button{ 
+                width: 180px;
+                height: 53px;
+                border: none;
+                background-color: $yellow;
+                font-family: $h-fonts;
+                color: $white;
+                font-size: 15px;
+                line-height: 25px;
+                }
+                & button:hover{
+                    border: 3px solid $yellow;
+                    color: $yellow;
+                }
+            
+        }
+    }
+}
+@media only screen and(max-width: 567px){
+    .map {
+        &__img{
+            width: 100%;
+            display: block;
+        }
+        &__item {
+            display: none;
+            position: relative;
+            width: 100%;
+            background-image: url(../../images/Object.png);
+        }
+        &__text{
+            margin-bottom: 240px;
+            display: flex;
+            flex-direction: column;
+            height: 110px;
+            align-items: center;
+            justify-content: space-between;
+            & h2{
+                font-family: 'Space Mono';
+                font-size: 48px;
+                line-height: 48px;
+                letter-spacing: -2.14286px;
+                color: #495567;
+                width: 351px;
+            }
+            & p{
+                font-family: 'Lexend Deca';
+                font-size: 15px;
+                line-height: 25px;
+                color: #939CAA;
+                width: 80%;
+            }
+            
+            & button{ 
+                width: 180px;
+                height: 53px;
+                padding: 12px 0px;
+                border: none;
+                background-color: $yellow;
+                font-family: $h-fonts;
+                color: $white;
+                font-size: 15px;
+                line-height: 25px;
+                }
+                & button:hover{
+                    border: 3px solid $yellow;
+                    color: $yellow;
+                }
+            
+        }
+    }
+}
+@media only screen and(max-width: 375px){
+    .map {
+        &__img{
+            width: 100%;
+            display: block;
+        }
+        &__item {
+            display: none;
+            position: relative;
+            width: 100%;
+            background-image: url(../../images/Object.png);
+        }
+        &__text{
+            margin-bottom: 240px;
+            display: flex;
+            flex-direction: column;
+            height: 110px;
+            align-items: center;
+            justify-content: space-between;
+            & h2{
+                font-family: 'Space Mono';
+                font-size: 48px;
+                line-height: 48px;
+                letter-spacing: -2.14286px;
+                color: #495567;
+                width: 351px;
+            }
+            & p{
+                font-family: 'Lexend Deca';
+                font-size: 15px;
+                line-height: 25px;
+                color: #939CAA;
+                width: 80%;
+            }
+        }
+    }
+}

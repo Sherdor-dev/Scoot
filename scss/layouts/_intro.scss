@@ -1,0 +1,324 @@
+#intro{
+    width: 100%;
+    background-image: url(../../images/Bitmap.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+    z-index: 9879879;
+}
+
+.intro{
+    
+    height: 650px;
+    display: flex;
+    align-items: center;
+
+    &__item{
+        position: relative;
+        display: flex;
+        gap: 30px;
+        flex-direction: column;
+
+        &--img{
+            position: absolute;
+            top: 200px;
+            left: -220px;
+        }
+        &--image{
+            position: absolute;
+            top: 200px;
+            left: 540px;
+        }
+        &--title{
+            margin: 0;
+            font-family: $h-fonts;
+            font-size: 56px;
+            line-height: 56px;
+            letter-spacing: -2.5px;
+            color: $white;
+            width: 500px;
+        }
+        &--paragraph{
+            padding-left: 20%;
+            width: 470px;
+            font-family: $p-fonts;
+            font-weight: 400;
+            font-size: 15px;
+            line-height: 25px;
+            color: $white;
+        }
+        &--button{
+            padding-left: 20%;
+        }
+        &--button button{
+            width: 180px;
+            height: 53px;
+            border: none;
+            background-color: $yellow;
+            font-family: $h-fonts;
+            color: $white;
+            font-size: 15px;
+            line-height: 25px;
+        }
+        &--button button:active{
+            background: none;
+            border: 3px solid $yellow;
+            color: $yellow;
+        }
+    }
+}
+@media only screen and(max-width:992px){
+    .intro{
+        justify-content: center;
+    
+        &__item{
+            position: relative;
+            display: flex;
+            text-align: center;
+            justify-content: center;
+            align-items: center;
+            gap: 30px;
+            flex-direction: column;
+    
+            &--img{
+                display: none;
+                position: absolute;
+                top: 190px;
+                left: -20px;
+            }
+            &--image{
+                position: absolute;
+                top: 320px;
+                left: -250px;
+            }
+            &--title{
+                margin: 0;
+                font-family: $h-fonts;
+                font-size: 56px;
+                line-height: 56px;
+                letter-spacing: -2.5px;
+                color: $white;
+                width: 500px;
+            }
+            &--paragraph{
+                padding: 0;
+                font-family: $p-fonts;
+                font-weight: 400;
+                font-size: 15px;
+                line-height: 25px;
+                color: $white;
+            }
+            &--button{
+                padding: 0;
+                position: relative;
+                left: 0px;
+                width: 180px;
+                height: 53px;
+                border: none;
+                background-color: $yellow;
+                font-family: $h-fonts;
+                color: $white;
+                font-size: 15px;
+                line-height: 25px;
+            }
+            &--button:active{
+                background: none;
+                border: 3px solid $yellow;
+                color: $yellow;
+            }
+        }
+    }
+}
+@media only screen and(max-width:768px){
+    .intro{
+        height: 650px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    
+        &__item{
+            position: relative;
+            display: flex;
+            text-align: center;
+            justify-content: center;
+            align-items: center;
+            gap: 30px;
+            flex-direction: column;
+    
+            &--img{
+                display: none;
+                position: absolute;
+                top: 200px;
+                left: -20px;
+            }
+            &--image{
+                position: absolute;
+                top: 290px;
+                left: -250px;
+            }
+            &--title{
+                margin: 0;
+                font-family: $h-fonts;
+                font-size: 48px;
+                line-height: 48px;
+                letter-spacing: -2.5px;
+                color: $white;
+                width: 500px;
+            }
+            &--paragraph{
+                position: relative;
+                left: 0px;
+                width: 405px;
+                font-family: $p-fonts;
+                font-weight: 400;
+                font-size: 15px;
+                line-height: 25px;
+                color: $white;
+            }
+            &--button{
+                position: relative;
+                left: 0px;
+                width: 180px;
+                height: 53px;
+                border: none;
+                background-color: $yellow;
+                font-family: $h-fonts;
+                color: $white;
+                font-size: 15px;
+                line-height: 25px;
+            }
+            &--button:active{
+                background: none;
+                border: 3px solid $yellow;
+                color: $yellow;
+            }
+        }
+    }
+}
+@media only screen and(max-width:576px){
+    .intro{
+        height: 650px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    
+        &__item{
+            position: relative;
+            display: flex;
+            text-align: center;
+            justify-content: center;
+            align-items: center;
+            gap: 30px;
+            flex-direction: column;
+    
+            &--img{
+                display: none;
+                position: absolute;
+                top: 200px;
+                left: -20px;
+            }
+            &--image{
+                position: absolute;
+                top: 300px;
+                left: -250px;
+            }
+            &--title{
+                width: 380px;
+                font-size: 42px;
+                line-height: 42px;
+                text-align: center;
+            }
+            &--paragraph{
+                width: 380px;
+                font-family: $p-fonts;
+                font-weight: 400;
+                font-size: 15px;
+                line-height: 25px;
+                color: $white;
+            }
+            &--button{
+                position: relative;
+                left: 0px;
+                width: 180px;
+                height: 53px;
+                border: none;
+                background-color: $yellow;
+                font-family: $h-fonts;
+                color: $white;
+                font-size: 15px;
+                line-height: 25px;
+            }
+            &--button:active{
+                background: none;
+                border: 3px solid $yellow;
+                color: $yellow;
+            }
+        }
+    }
+}
+@media only screen and(max-width:375px){
+    .intro{
+        height: 650px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        &__item{
+            position: relative;
+            display: flex;
+            text-align: center;
+            justify-content: center;
+            align-items: center;
+            gap: 30px;
+            flex-direction: column;
+    
+            &--img{
+                width: 60%;
+                display: none;
+                position: absolute;
+                top: 200px;
+                left: 220px;
+            }
+            &--image{
+                width: 60%;
+                position: absolute;
+                top: 330px;
+                left: -150px;
+            }
+            &--title{
+                margin: 0;
+                font-family: $h-fonts;
+                font-size: 42px;
+                line-height: 42px;
+                letter-spacing: -2.5px;
+                color: $white;
+                width: 80%;
+            }
+            &--paragraph{
+                width: 80%;
+                font-family: $p-fonts;
+                font-weight: 400;
+                font-size: 15px;
+                line-height: 25px;
+                color: $white;
+            }
+            &--button{
+                position: relative;
+                left: 0px;
+                width: 180px;
+                height: 53px;
+                border: none;
+                background-color: $yellow;
+                font-family: $h-fonts;
+                color: $white;
+                font-size: 15px;
+                line-height: 25px;
+            }
+            &--button:active{
+                background: none;
+                border: 3px solid $yellow;
+                color: $yellow;
+            }
+        }
+    }
+}

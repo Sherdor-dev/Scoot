@@ -1,0 +1,177 @@
+#sign{
+    width: 100%;
+    background-color: $dark;
+}
+.login{
+    position: relative;
+    height: 300px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    overflow: hidden;
+    & h2{
+        position: relative;
+        z-index: 1;
+        width: 40%;
+        font-family: $h-fonts;
+        font-size: 48px;
+        line-height: 48px;        
+        letter-spacing: -2.14286px;       
+        color: $white;
+    }
+    &__item{
+        display: flex;
+        gap: 10px;
+        position: relative;
+        z-index: 1;
+
+        &--form{
+
+            & button{
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-around;
+                    width: 159px;
+                    height: 56px;      
+                    background: #E5ECF4;
+                    border-radius: 4px;
+                    border: none;
+                    & p{
+                        font-family: $h-fonts;
+                        font-weight: 700;
+                        font-size: 10px;
+                        line-height: 15px;
+                        letter-spacing: -0.446429px;
+                        color: #495567;
+                    }
+                    & h3{
+                        font-family: $h-fonts;
+                        font-weight: 700;
+                        font-size: 20px;
+                        line-height: 24px;
+                        letter-spacing: -0.892857px;
+                        color: #333A44;
+                    }
+                }
+            }
+        }
+    #apple{
+        font-size: 30px;
+        color: #333A44;
+    }
+    #google{
+        font-size: 30px;
+        color: #333A44;
+    }
+    &__circle{
+        position: absolute;
+        z-index: 0;
+        left: 300px;
+        top: 130px;
+        width: 347px;
+        height: 347px;
+        border-radius: 50%;
+        border:15px solid $grey;
+    }
+    #circle{
+        position: absolute;
+        z-index: 0;
+        left: 670px;
+        top: 130px;
+        width: 347px;
+        height: 347px;
+        border-radius: 50%;
+        border:15px solid $grey;
+    }
+    #circle2{
+        position: absolute;
+        z-index: 0;
+        left: 1040px;
+        top: 130px;
+        background-color: $grey;
+    }
+}
+
+@media only screen and(max-width:992px){
+    .login{
+        // overflow: hidden;
+        position: relative;
+        height: 300px;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        padding: 0 13px;
+    }
+}
+@media only screen and(max-width:768px){
+    .login{
+        height: 300px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 40px;
+        & h2{
+            text-align: center;
+            width: 60%;
+        }
+        &__circle{
+            left: -180px;
+            top: 130px;
+        }
+        #circle{
+            left: 200px;
+            top: 130px;
+        }
+        #circle2{
+            left: 580px;
+            top: 130px;
+        }
+    }
+}
+@media only screen and(max-width: 576px){
+    .login{
+        height: 300px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 40px;
+        & h2{
+            text-align: center;
+            width: 80%;
+            font-size: 38px;
+        }
+        &__circle{
+            left: -180px;
+            top: 130px;
+        }
+        #circle{
+            left: 230px;
+            top: 130px;
+        }
+    }
+}
+@media only screen and(max-width: 375px){
+    .login{
+        height: 300px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 40px;
+        & h2{
+            text-align: center;
+            width: 80%;
+            font-size: 32px;
+        }
+        &__circle{
+            left: -180px;
+            top: 130px;
+        }
+        #circle{
+            left: 230px;
+            top: 130px;
+        }
+    }
+}

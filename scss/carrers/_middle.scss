@@ -1,0 +1,157 @@
+.center{
+    margin-bottom: 120px;
+    & h2{
+        text-align: center;
+        font-family: $h-fonts;
+        font-size: 48px;
+        line-height: 48px;
+        letter-spacing: -2.14286px;    
+        color: $grey;
+        margin-bottom: 100px;
+    }
+    &__items{
+        display: flex;
+        justify-content: space-between;
+        text-align: center;
+
+        & img{
+            border-radius: 50%;
+        }
+        & h3{
+            font-family: $h-fonts;
+            font-size: 24px;
+            line-height: 28px;
+            letter-spacing: -1.07143px;
+            color: $dark;
+            margin: 37px 0px;
+        }
+        & p{
+            font-family: $p-fonts;
+            font-size: 15px;
+            line-height: 25px;
+            color: #939CAA;
+        }
+        &--card{
+            &-img{
+                position: relative;
+                & span{
+                    padding: 34px;
+                    font-size: 24px;
+                    background: #fcb72b;
+                    border-radius: 50%;
+                    -webkit-box-sizing: border-box;
+                    box-sizing: border-box;
+                    margin: 15px;
+                }
+            }
+        }
+    }
+}
+@media only screen and(max-width: 992px){
+    .center{
+        margin-bottom: 120px;
+        & h2{
+            text-align: center;
+            font-family: $h-fonts;
+            font-size: 48px;
+            line-height: 48px;
+            letter-spacing: -2.14286px;    
+            color: $grey;
+            margin-bottom: 100px;
+        }
+        &__items{
+            gap: 40px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            text-align: center;
+            align-items: center;
+    
+            & img{
+                border-radius: 50%;
+            }
+            & h3{
+                font-family: $h-fonts;
+                font-size: 24px;
+                line-height: 28px;
+                letter-spacing: -1.07143px;
+                color: $dark;
+                margin-top: 20px;
+
+            }
+            & p{
+                margin: 0 auto;
+                width: 65%;
+                font-family: $p-fonts;
+                font-size: 15px;
+                line-height: 25px;
+                color: #939CAA;
+            }
+            &--card{
+                &-img{
+                    position: relative;
+                    & span{
+                        padding: 34px;
+                        font-size: 24px;
+                        background: #fcb72b;
+                        border-radius: 50%;
+                        -webkit-box-sizing: border-box;
+                        box-sizing: border-box;
+                        display: none;
+                    }
+                }
+            }
+        }
+    }
+}
+@media only screen and(max-width: 768px){
+    .center{
+        margin-bottom: 120px;
+        &__items{
+            margin: 0 auto;
+            & h3{
+                margin: 37px;
+            }
+        }
+    } 
+}
+@media only screen and(max-width: 576px){
+    .center{
+        margin-bottom: 120px;
+        &__items{
+           width: 80%;
+            & h3{
+                margin: 32px;
+            }
+            & p{
+                width: 85%;
+            }
+            &--card{
+                &-img{
+                    position: relative;
+                    & span{
+                        padding: 34px;
+                        font-size: 24px;
+                        background: #fcb72b;
+                        border-radius: 50%;
+                        -webkit-box-sizing: border-box;
+                        box-sizing: border-box;
+                        display: none;
+                    }
+                }
+            }
+
+        }
+    } 
+}
+@media only screen and(max-width: 375px){
+    .center{
+        margin-bottom: 120px;
+        &__items{
+
+            & h3{
+                margin: 32px;
+            }
+        }
+    } 
+}

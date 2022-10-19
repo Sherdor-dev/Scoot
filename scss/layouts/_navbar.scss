@@ -1,0 +1,217 @@
+// Navbar styles
+.navbar{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    height: 96px;
+    align-items: center;
+    & label, input{
+        display: none;
+    }
+    &__right{
+        display: flex;
+        align-items: center;
+        gap: 58.18px;
+
+        &--logo{
+            text-decoration: none;
+            font-family: $h-fonts;
+            font-size: 32px;
+            color: $dark;
+        }
+
+        &--ul{
+            display: flex;
+            gap: 32px;
+            margin-top: 5px;
+            &-list{
+                list-style-type: none;
+                & a:active{
+                    color: $yellow;
+                }
+
+                & a{
+                    text-decoration: none;
+                    font-family: $h-fonts;
+                    font-size: 15px;
+                    line-height: 25px;
+                    color: $grey;
+                }
+            }
+            &-button{
+                display: none;
+                width: 180px;
+                height: 53px;
+                border: none;
+                background-color: $yellow;
+                font-family: $h-fonts;
+                color: $white;
+                font-size: 15px;
+                line-height: 25px;
+            }
+            &-button:hover{
+                background: none;
+                border: 3px solid $yellow;
+                color: $yellow;
+            }
+        }
+
+    }
+    &__button{
+        width: 180px;
+        height: 53px;
+        border: none;
+        background-color: $yellow;
+        font-family: $h-fonts;
+        color: $white;
+        font-size: 15px;
+        line-height: 25px;
+    }
+    &__button:active{
+        background: none;
+        border: 3px solid $yellow;
+        color: $yellow;
+    }
+}
+@media only screen and(max-width: 992px){
+    .navbar{
+        display: flex;
+        justify-content: space-around;
+        height: 96px;
+        align-items: center;
+    }
+}
+@media only screen and(max-width: 768px){
+    .navbar{
+        // max-width: 100%;
+        display: flex;
+        justify-content: space-around;
+        height: 96px;
+        align-items: center;
+    }
+}
+@media only screen and(max-width: 576px){
+    .navbar{
+        display: flex;
+        justify-content: space-between;
+        height: 64px;
+        align-items: center;
+        & label{
+            display: block;
+        }
+        &__right{
+            padding: 0 10px;
+            display: flex;
+            align-items: center;
+            gap: 98.18px;
+            &--ul{
+                position: fixed;
+                justify-content: start;
+                top: 58px;
+                left: -100%;
+                z-index: 1324;
+                flex-direction: column;
+                align-items: center;
+                background-color: #333A44;
+                width: 70%;
+                height: 100vh;
+                display: flex;
+                gap: 32px;
+                padding-top: 60px;
+                transition: 1s;
+                &-list a{
+                    color: $white;
+                }
+                &-button{
+                    display: block;
+                    position: absolute;
+                    bottom: 100px;
+                }
+            }
+            #bar:checked ~ .ullist{
+                left: 0;
+            }
+            .l i{
+                 color: $yellow;
+                 font-size: 32px;
+            }
+            #bar:checked ~ .l i:before{
+                content: "X";
+            }
+        }
+        &__button{
+            display: none;
+        }
+    }
+}
+@media only screen and(max-width: 375px){
+    .navbar{
+        display: flex;
+        justify-content: space-between;
+        height: 64px;
+        align-items: center;
+        & label, input{
+            display: none;
+        }
+        & label{
+            display: block;
+            & box-icon{
+                font-size: 36px;
+            }
+        }
+        &__right{
+            padding: 0 10px;
+            display: flex;
+            align-items: center;
+            gap: 98.18px;
+    
+            &--logo{
+                text-decoration: none;
+                font-family: $h-fonts;
+                font-size: 32px;
+                color: $dark;
+            }
+    
+            &--ul{
+                position: fixed;
+                justify-content: start;
+                top: 58px;
+                left: -100%;
+                z-index: 1324;
+                flex-direction: column;
+                align-items: center;
+                background-color: #333A44;
+                width: 70%;
+                height: 100vh;
+                display: flex;
+                gap: 32px;
+                padding-top: 60px;
+                transition: 1s;
+                &-list a{
+                    color: $white;
+                }
+                &-button{
+                    display: block;
+                    position: absolute;
+                    bottom: 100px;
+                }
+            }
+            #bar:checked ~ .ullist{
+                left: 0;
+            }
+            #box-icon{
+                font-size: 30px;
+            }
+            .l i{
+                 color: khaki;
+                 font-size: 32px;
+            }
+            #bar:checked ~ .l i:before{
+                content: "X";
+            }
+        }
+        &__button{
+            display: none;
+        }
+    }
+}

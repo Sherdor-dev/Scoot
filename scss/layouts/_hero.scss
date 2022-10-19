@@ -1,0 +1,187 @@
+.hero{
+    margin-top: 160px;
+    margin-bottom: 147px;
+    position: relative;
+    &__line{
+        display: block;
+        position: absolute;
+        height: 1px;
+        border: 14px solid $light-grey;
+        width: 974px;
+        left: -150px;
+        top: 35px;
+    }
+    &__item{
+        position: relative;
+        z-index: 999;
+        display: flex;
+        gap: 30px;
+
+        &--card{
+
+            & h2{
+            font-family: $h-fonts;
+            font-weight: 700;
+            font-size: 24px;
+            line-height: 28px;
+            letter-spacing: -1.07143px;
+            color: $dark;
+            margin-top: 40px;
+            margin-bottom: 27px;
+            }
+
+            & p{  
+            font-family: $p-fonts;
+            font-style: normal;
+            font-weight: 400;
+            font-size: 15px;
+            line-height: 25px;
+            color: #939CAA;
+            }
+        }
+    }
+}
+
+@media only screen and(max-width:992px){
+    .hero{
+        margin-top: 130px;
+        margin-bottom: 127px;
+        position: relative;
+        padding-left: 80px;
+
+
+        &__line{
+            display: block;
+            position: absolute;
+            height: 1px;
+            left: -360px;
+            transform: rotate(90deg);
+            top: -100px;
+            z-index: 0;
+        }
+        &__item{
+            align-items: center;
+            position: relative;
+            z-index: 999;
+            display: flex;
+            flex-direction: column;
+            &--card{
+                display: flex;
+                gap: 10px;
+                &-text{
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    & h2{  
+                        margin-top: 5px;
+                        margin-bottom: 10px;
+                        width: 70%;
+                        }
+            
+                        & p{  
+                        width: 70%;
+                        }
+                }
+            }
+        }
+    }
+}
+@media only screen and(max-width: 768px){
+    .hero{
+        margin-top: 130px;
+        margin-bottom: 127px;
+        position: relative;
+        padding-left: 80px;
+        &__line{
+            display: block;
+            position: absolute;
+            height: 1px;
+            left: -360px;
+            transform: rotate(90deg);
+            top: -60px;
+            z-index: 0;
+        }
+        &__item{
+            align-items: center;
+            position: relative;
+            z-index: 999;
+            display: flex;
+            flex-direction: column;
+            &--card{
+                display: flex;
+                gap: 10px;
+                &-text{
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    & h2{  
+                        margin-top: 5px;
+                        margin-bottom: 10px;
+                        width: 70%;
+                    }               
+                    & p{  
+                        width: 70%;
+                    }
+                }
+            }
+        }
+    }
+}
+@media only screen and(max-width:576px){
+    .hero{
+        margin-top: 100px;
+        margin-bottom: 107px;
+        position: relative;
+        padding: 0 5px;
+        &__line{
+            display: none;
+        }
+        &__item{
+            position: relative;
+            z-index: 999;
+            text-align: center;
+            &--card{
+                display: block;
+                &-text{
+                    & h2{  
+                        margin-top: 5px;
+                        margin-bottom: 10px;
+                        width: 90%;
+                    }               
+                    & p{  
+                        width: 90%;
+                    }
+                }
+            }
+        }
+    }
+}
+@media only screen and(max-width:375px){
+    .hero{
+        margin-top: 100px;
+        margin-bottom: 107px;
+        position: relative;
+        padding: 0 5px;
+        &__line{
+            display: none;
+        }
+        &__item{
+            position: relative;
+            z-index: 999;
+            text-align: center;
+            &--card{
+                display: block;
+                &-text{
+                    & h2{  
+                        margin-top: 5px;
+                        margin-bottom: 10px;
+                        width: 90%;
+                    }               
+                    & p{  
+                        width: 90%;
+                    }
+                }
+            }
+        }
+    }
+}

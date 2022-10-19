@@ -1,0 +1,200 @@
+.faqs{
+    & h2{
+        text-align: center;
+        font-family: $h-fonts;
+        font-size: 48px;
+        line-height: 48px;
+        letter-spacing: -2.14286px;
+        color: $dark;
+        margin: 64px;
+    }
+    &__item{
+        &--top{
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 40px;
+            & h3{
+                width: 40%;
+                font-family: $h-fonts;
+                font-size: 40px;
+                line-height: 48px;
+                letter-spacing: -1.78571px;
+                color: $dark;
+            
+            }
+            &-card{
+                width: 60%;
+                display: flex;
+                flex-direction: column;
+                gap: 16px;
+                &-use{
+                    padding: 32px 40px;
+                    background: #F2F5F9;
+                    & div{
+                        width: 100%;
+                        display: flex;
+                        justify-content: space-between;
+                        margin-bottom: 24px;
+                        & h4{
+                            font-family: 'Space Mono';
+                            font-style: normal;
+                            font-weight: 700;
+                            font-size: 24px;
+                            line-height: 28px;
+                            letter-spacing: -1.07143px;
+                            color: #495567;
+                        }
+                    }
+                    & p{
+                        font-family: 'Lexend Deca';
+                        font-size: 15px;
+                        line-height: 25px;
+                        color: #495567;
+                    }
+                }
+            }
+        }   
+        &--bottom{
+            display: flex;
+            justify-content: space-between;
+            & h3{
+                width: 40%;
+                font-family: $h-fonts;
+                font-size: 40px;
+                line-height: 48px;
+                letter-spacing: -1.78571px;
+                color: $dark;
+            }
+        }
+    }
+}
+
+@media only screen and(max-width:992px){
+    .faqs{
+        &__item{
+            display: flex;
+            flex-direction: column;
+            &--top{
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                gap: 24px;
+                margin-bottom: 40px;
+                & h3{
+                    text-align: center;
+                }
+                &-card{
+                    width: 80%;
+                }
+            }
+            &--bottom{
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                gap: 24px;
+                margin-bottom: 40px;
+                & h3{
+                    text-align: center;
+                }
+                &-card{
+                    width: 80%;
+                }
+            }
+        }
+    }
+}
+@media only screen and(max-width:768px){
+    .faqs{
+        &__item{
+            &--top{
+                & h3{
+                    width: 70%;
+                }
+                &-card{
+                    width: 80%;
+                }
+            }
+            &--bottom{
+                & h3{
+                    width: 70%;
+                }
+                &-card{
+                    width: 80%;
+                }
+            }
+        }
+    }
+}
+
+@media only screen and(max-width: 576px){
+    .faqs{
+        &__item{
+            &--top{
+                & h3{
+                    font-size: 32px;
+                    width: 70%;
+                }
+                &-card{
+                    width: 80%;
+                    &-use{
+                        padding: 24px 30px;
+                        background: #F2F5F9;
+                        & div{
+                            & h4{
+                                font-size: 20px;
+                            }
+                        }
+                        & p{
+                            font-size: 14px;
+                        }
+                }
+            }
+            &--bottom{
+                & h3{
+                    width: 70%;
+                }
+                &-card{
+                    width: 80%;
+                }
+            }
+            }
+        }
+    }
+}
+@media only screen and(max-width: 375px){
+    .faqs{
+        &__item{
+            &--top{
+                & h3{
+                    font-size: 32px;
+                    width: 70%;
+                }
+                &-card{
+                    width: 80%;
+                    &-use{
+                        padding: 24px 30px;
+                        background: #F2F5F9;
+                        & div{
+                            & h4{
+                                font-size: 20px;
+                            }
+                        }
+                        & p{
+                            font-size: 14px;
+                        }
+                }
+            }
+            &--bottom{
+                & h3{
+                    width: 70%;
+                }
+                &-card{
+                    width: 80%;
+                }
+            }
+            }
+        }
+    }
+}
